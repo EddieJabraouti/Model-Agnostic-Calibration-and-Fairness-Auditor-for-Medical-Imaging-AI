@@ -1,0 +1,41 @@
+Project Summary — “A Model-Agnostic Calibration and Fairness Auditor for Medical Imaging AI”
+
+Goal:
+Develop an open-source framework to audit and improve calibration and fairness in medical imaging AI models using existing predictions and metadata — without retraining models.
+
+Core Features:
+
+Evaluate calibration (ECE, Brier score, reliability curves).
+
+Assess subgroup fairness (age, sex, ethnicity, scanner site).
+
+Apply optional recalibration (temperature or group-wise scaling).
+
+Model-agnostic, open, and reusable across imaging domains.
+
+Scientific Value:
+Addresses the lack of standardized tools for calibration + fairness auditing in medical imaging. Supports reproducibility and trustworthiness goals (PCCP alignment).
+
+Timeline (8 Weeks):
+1–2: Review metrics, set up environment, implement base metrics.
+3–4: Add subgroup and fairness evaluations, unified audit report.
+5–6: Implement recalibration + package as CLI/library.
+7–8: Write and submit PCCP-style paper, release preprint + repo.
+
+Deliverables:
+
+Public GitHub repo (imaging-faircal-auditor)
+
+Metric scripts + JSON/plot outputs
+
+Recalibration module
+
+Reproducible evaluation notebook (CheXpert or ISIC)
+
+PCCP paper with figures (calibration & fairness results)
+
+Tech Stack:
+Python, PyTorch, NumPy, scikit-learn, matplotlib, pandas, MONAI (optional).
+
+Impact:
+Creates a unified, trustworthy, and reproducible tool for assessing and improving calibration and fairness in clinical AI models.
